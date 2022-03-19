@@ -100,7 +100,9 @@ let catchMessage = prompt("Would you like to keep this fish? [yes] or [no] > ")
 
 
 if (catchMessage === "yes") {
-    caughtFish.push(fish)
+  caughtFish.push(fish)
+  console.log(caughtFish);
+} else if (catchMessage === "no") {
+  console.log(`Not a good fish to keep, let's keep going plenty of time!!!`);
 }
 
-console.log(caughtFish);
